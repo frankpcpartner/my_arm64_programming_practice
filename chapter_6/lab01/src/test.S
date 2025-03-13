@@ -1,5 +1,6 @@
 .section ".text"
 
+.align 3
 .global _test
 
 _test:

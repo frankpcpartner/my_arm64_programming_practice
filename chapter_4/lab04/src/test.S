@@ -1,5 +1,6 @@
 .section ".text"
 
+.align 3
 .global _test
 _test:
     stp x29, x30, [sp,#-16]!
@@ -24,8 +25,10 @@ _test:
     ret
 
 .section ".rodata"
+.align 3
 str_bfi_ret_fmt:
     .string "\bfi ret is 0x%x\n"
 
+.align 3
 str_bfx_sbfx_ret_fmt:
     .string "\bfx ret is 0x%x,sbfx ret is 0x%x\n"

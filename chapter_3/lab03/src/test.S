@@ -1,7 +1,7 @@
 .section ".text"
 
 .global _test
-
+.align 3
 _test:
     mov x2, 0x400000
     ldr x6, =0x1234abce

@@ -1,7 +1,7 @@
 .section ".text"
 
 #define MY_LABEL 0x20
-
+.align 3
 .global _test
 
 _test:

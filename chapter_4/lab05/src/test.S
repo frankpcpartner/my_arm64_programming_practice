@@ -1,5 +1,6 @@
 .section ".text"
 
+.align 3
 .global _test
 _test:
     stp x29, x30, [sp,#-16]!
@@ -30,14 +31,18 @@ _test:
     ret
 
 .section ".rodata"
+.align 3
 str_not_support_lse_fmt:    
     .string "\rNot supoort LSE\n"
 
+.align 3
 str_support_lse_fmt:    
     .string "\rSupoort LSE\n"
 
+.align 3
 str_not_support_aes_fmt:    
     .string "\rNot supoort AES\n"
 
+.align 3
 str_support_aes_fmt:    
     .string "\rSupoort AES\n"

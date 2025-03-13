@@ -2,6 +2,7 @@
 
 .global _test1
 .global _test2
+.align 3
 
 _test1:
     stp x29, x30, [sp, #-16]!
@@ -53,8 +54,9 @@ _test2:
 
 
 .section ".rodata"
+.align 3
 str_c_is_set:
     .string "\rThe c is set.\n"
-
+.align 3
 str_c_is_not_set:
     .string "\rThe c is not set.\n"

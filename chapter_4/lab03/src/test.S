@@ -1,5 +1,6 @@
 .section ".text"
 
+.align 3
 .global _test
 _test:
     stp x29, x30, [sp,#-16]!
@@ -21,5 +22,6 @@ _test:
     ret
 
 .section ".rodata"
+.align 3
 str_fmt:
     .string "\rnzcv is 0x%x\n"

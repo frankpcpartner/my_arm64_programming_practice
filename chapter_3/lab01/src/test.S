@@ -1,7 +1,7 @@
 .section ".text"
 
 .global _test
-
+.align 3
 _test:
     mov x1, #0x80000
     mov x3, #16

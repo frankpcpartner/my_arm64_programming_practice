@@ -1,7 +1,7 @@
 .section ".text"
 
 #define MY_LABEL 0x20
-
+.align 3
 .global _test
 
 //x0:The dest address, x1:The input value, x2: count
