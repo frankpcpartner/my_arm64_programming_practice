@@ -247,9 +247,6 @@ void print_at_result(unsigned long long address, unsigned long long par_el1)
 }
 
 #define NOOP 10000
-
-#if 1
-
 static void test_cache(void)
 {
 	unsigned long start = jiffies;
@@ -275,30 +272,6 @@ static void test_cache(void)
 
 	printf("\r%s time %llu jiffies\n", __func__, jiffies - start);	
 }
-#else
-static void test_cache(void)
-{
-	unsigned long start = jiffies;
-
-	unsigned long page;
-	int i, j;
-	char var;
-
-	page = get_free_page();
-
-	for (j = 0; j < NOOP; j++) {
-		flush_cache_range(page, page + PAGE_SIZE -1);
-		for (i = 0; i < PAGE_SIZE; i++) {
-			var = *((char *)(page + i));
-			//*((char *)(page + i)) = 0x55;
-		}
-	}
-
-	printf("\r%s time %llu jiffies\n", __func__, jiffies - start);
-}
-
-#endif
-
 
 void main()
 {
