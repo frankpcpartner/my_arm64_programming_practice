@@ -5,7 +5,7 @@ It serves as a practical guide to understanding the ARM architecture and writing
 
 ## 📘 Book Overview
 
-***Arm64体系结构编程与实践***: Fundamentals and Techniques* introduces the ARM instruction set, assembly syntax, memory operations, flow control, system calls, and more. 
+***Arm64体系结构编程与实践*** introduces the ARM instruction set, assembly syntax, memory operations, flow control, system calls, and more. 
 It is widely used as a resource for learning low-level programming on ARM systems.
 
 👉 [View the book on Tenlong Bookstore](https://www.tenlong.com.tw/products/9787115582102)
